@@ -57,3 +57,30 @@ body {
     left: -10px;
     z-index: -2;
 }
+
+.dot-container {
+    position: absolute;
+    top: -40px;
+    left: 140px;
+    width: 20px;
+    height: 190px;
+    animation: rotate 7.5s linear infinite;
+    transform-origin: bottom center;
+}
+
+.dot {
+    height: 20px;
+    width: 20px;
+    background-color: white;
+    border-radius: 50%;
+}
+
+@keyframes rotate {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    100% {
+        transform: rotate(360deg);
+    }
+}
