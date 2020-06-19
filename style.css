@@ -145,7 +145,7 @@ input:focus {
     background-color: #00628F;
     border-radius: 10px;
     border: 1px solid white;
-    transition: .3s;
+    transition: .8s;
 }
 
 .settings-container.show {
@@ -168,7 +168,10 @@ input:focus {
     text-align: right;
 }
 
-.settings-container button {
+.submit-btn {
+    display: block;
+    margin: 0 auto;
+    padding: 5px 25px;
     background-color: #013D61;
     transition: .3s;
 }
