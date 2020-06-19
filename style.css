@@ -10,6 +10,7 @@ body {
     font-family: 'Roboto Condensed', sans-serif;
     background: #025373 url(/img/Image1.jpg) no-repeat center center/cover;
     min-height: 100vh;
+    width: 100%;
     overflow: hidden;
     color: white;
     display: flex;
@@ -108,4 +109,71 @@ body {
     100% {
         transform: scale(1);
     }
+}
+
+button {
+    padding: 5px 10px;
+    cursor: pointer;
+    background-color: #00628F;
+    border: 1px solid white;
+    border-radius: 5px;
+    color: white;
+    margin: 0 5px;
+}
+
+button:focus,
+input:focus {
+    outline: 0;
+}
+
+.settings-btn {
+    position: absolute;
+    bottom: 20px;
+    left: 20px;
+}
+
+.settings-container {
+    position: absolute;
+    left: -100%;
+    bottom: 75px;
+    height: 250px;
+    width: 200px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    background-color: #00628F;
+    border-radius: 10px;
+    border: 1px solid white;
+    transition: .3s;
+}
+
+.settings-container.show {
+    left: 25px;
+}
+
+.settings-container div {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.settings-container input {
+    margin-top: 5px;
+    padding: 5px;
+    width: 55px;
+    text-align: right;
+}
+
+.settings-container button {
+    background-color: #013D61;
+    transition: .3s;
+}
+
+.settings-container button:hover {
+    background-color: white;
+    color: #013D61;
 }
