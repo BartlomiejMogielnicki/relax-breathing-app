@@ -53,7 +53,7 @@ body {
 }
 
 .gradient-circle {
-    background: conic-gradient(#20C5E8 0%, #20C5E8 40%, #fff 40%, #fff 60%, #2297F2 60%, #2297F2 100%);
+    background-image: conic-gradient(#20C5E8 0%, #20C5E8 40%, #fff 40%, #fff 60%, #2297F2 60%, #2297F2 100%);
     width: 320px;
     height: 320px;
     border-radius: 50%;
